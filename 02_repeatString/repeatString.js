@@ -14,6 +14,8 @@ const repeatString = function (str, times) {
 };
 
 
+
+
 //parameters include the string to be repeated and the number to number of times the string will be repeated
 //usign array to give the words to be repeated and the repeat times to repeat the word
 
