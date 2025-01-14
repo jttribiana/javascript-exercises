@@ -1,46 +1,43 @@
-const add = function(add1, add2) {
-    let addNum = add1+add2;
-    return addNum
-};
+const add = function (a, b){
+  return a + b;
+}
 
-const subtract = function(sub1, sub2) {
-    let subNum = sub1 - sub2;
-    return subNum
-};
 
-const sum = function(array) {
-  let sumNum = 0;
-  for (let i = 0; i < array.length; i++){
-    sumNum += array[i];
-    
-  }
-  return sumNum
+const subtract = function(a, b) {
+	return a - b;
 };
 
 
-const multiply = function(mul) {
-    let mulNum = 1;
-    for (let i = 0; i < mul.length; i++){
-      mulNum *= mul[i];
-    }
-    return mulNum
+const sum = function(a) {
+  return a.reduce((acc, curr) => acc + curr, 0);
 };
 
-const power = function(raiseNum, powerNum) {
-	let power = raiseNum ** powerNum;
-  return power
+
+  
+const multiply = function(arr) {
+  return arr.reduce ((a, b) => a * b, 1);
+};
+
+const power = function(a, b) {
+	return a ** b;
 };
 
 const factorial = function(factNum){
   let factResult = factNum;
-  if (factNum === 0 || factNum === 1)
+    if (factNum === 0 || factNum === 1)
     return 1;
   while (factNum > 1){
-    factNum--;
-    factResult *= factNum;
+  factNum--;
+  factResult *= factNum;
   }
-  return factResult;
+    return factResult;
 }
+
+
+
+
+
+
 
 
 
